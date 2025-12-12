@@ -1,0 +1,14 @@
+{% extends "news/base_news.html" %}
+
+{% block title %}{{ news_article.title }}{% endblock %}
+
+{% block content %}
+<div class="row flex-md-row">
+    <div class="row bg-white">
+        <div class="h2 my-4">{{ news_article.title }}</div>
+        <p class="text-muted">Автор: {{ news_article.author }} Опубликовано: {{ news_article.created_at|date:"M d, Y" }}</p>
+        <div class="my-4">{{ news_article.content }}</div>
+        <p class="text-muted">Последнее редактирование: {{ news_article.updated_at|date:"M d, Y" }}</p>
+    </div>
+</div>
+{% endblock %}

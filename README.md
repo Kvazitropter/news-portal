@@ -6,9 +6,13 @@
 
 ---
 
-#### Clone repository and install dependencies:
+#### Clone repository:
 ```bash
 git clone git@github.com:Kvazitropter/news-portal.git
+```
+
+#### Install dependencies:
+```bash
 cd news-portal
 make install
 ```

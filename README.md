@@ -1,23 +1,30 @@
-## News portal
+# News portal
 
 ---
 
-### Setup:
+## Setup:
 
 ---
 
-```
+#### Clone repository and install dependencies:
+```bash
 git clone git@github.com:Kvazitropter/news-portal.git
 cd news-portal
 make install
 ```
-```
-# generate SECRET_KEY:
+
+#### Generate SECRET_KEY:
+```bash
 make console
->>> ```from django.core.management.utils import get_random_secret_key```
->>> ```print(get_random_secret_key())```
-# insert SECRET_KEY and other parameters to /.env
 ```
+`In console:`
+```bash
+from django.core.management.utils import get_random_secret_key
+get_random_secret_key()
+```
+`Insert generated key and other parameters in /.env`
+
+#### Run server:
 ```
 make dev
 ```
